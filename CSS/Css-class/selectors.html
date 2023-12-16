@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS-Selector</title>
+</head>
+<style>
+      /* element selector - select belement based on it's tagname */
+      div {
+            color: black;
+      }
+      /* class selectors - select element based on it's classname */
+      .box {
+            color: red;
+      }
+      /* id selector - select element based on it's id */
+      #box_1 {
+            color: red;
+      }
+      /* universal selector - selects all the element inside the body */
+      * {
+            font-size: 16px;
+      }
+      /* group selector - groups all elements having similar styles inorder to avoid repeated code */
+      .div_1, #div_2, .div_3, button {
+            font-family: 'Courier New', Courier, monospace;
+      }
+      /* attribute selector - selects element based on the attribute. Syntax -> tagname[custom_attribute_name="value"] */
+      div[data-type="shirt"] {
+            color: red;
+      }
+      /* descendant selector - selects all the elements including their sub child */
+      #div_1 span {
+            color: blue;
+      }
+      /* child selector - selects only its direct child */
+      #div_2 > div {
+            color: orange;
+      }
+      /* adjacent sibling selector - selects only the element next to it */
+      #div_3 + p {
+            color: aliceblue;
+      }
+      /* general sibling selector - selects all the elements next to it till the end of the body */
+      #div_4 ~ p {
+            color: aqua;
+      }
+      /* pseudo-class selectors - selects the element on a particular state */
+      a:hover {
+            color: red !important;
+      }
+      a:link {
+            color: yellowgreen;
+      }
+      a:visited {
+            color: blueviolet;
+      }
+      /* pseudo-element selectors - selects a part of the element */
+      p::first-letter {
+            font-size: 26px;
+            font-weight: bold;
+      }
+      p::first-line {
+            color: brown;
+      }
+      ul > li:first-child {
+            color: yellow;
+      }
+      ul > li:last-child {
+            color: bisque;
+      }
+      p::before {
+            content: '❝';
+            color: black !important;
+      }
+      p::after {
+            content: '❝';
+      }
+</style>
+      <div data-type="shirt">shirt</div>
+      <div data-type="shoe">shoe</div>
+      <div data-type="jean">jean</div>
+      <div data-type="shirt">shirt</div>
+      <span data-type="shirt">shirt</span>
+
+      <!-- --------------------------------------- -->
+
+      <div id="div_1">
+            <span>I am not inside a div</span>
+            <div>
+                  <span>I am inside a div</span>
+            </div>
+      </div>
+
+      <div id="div_2">
+            <span>I am not inside a div</span>
+            <span>I am span2 outside a div</span>
+            <div>
+                  <span>I am inside a div</span>
+            </div>
+      </div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio suscipit, corrupti cupiditate necessitatibus incidunt error ipsam quam nisi, enim amet officia sequi possimus iusto molestias ullam consequuntur, deserunt vero eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio suscipit, corrupti cupiditate necessitatibus incidunt error ipsam quam nisi, enim amet officia sequi possimus iusto molestias ullam consequuntur, deserunt vero eos</p>
+      <div id="div_3">
+            Div 3
+      </div>
+      <a href="https://www.google.com/photos">I am an anchor tag</a>
+
+      <p>I am para 1</p>
+      <p> I am para 2</p>
+      <p> I am para 3</p>
+      <div id="div_4"> Div 4</div>
+      <a>Anchor 1</a>
+      <p>I am para 1</p>
+      <p>I am para 2</p>
+     <a> I am an anchor tag</a>
+      <p> I am para 3</p>
+      <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS(es6)</li>
+      </ul>
+      <p>Lore</p>
+</body>
+</html>

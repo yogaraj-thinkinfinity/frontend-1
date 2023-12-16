@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>TABLE-DEMO</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th,td {
+
+            border:1px solid grey;
+            padding: 5px;
+            text-align: left;
+        }
+       
+        caption {
+            color: rgb(43, 70, 226);
+            font-weight: bold;
+            font-family: Cooper b;
+        }
+       
+        thead tr.de {
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(even) {
+            background-color:lavender;
+            color: #000;
+        }
+        tbody tr:hover {
+            background-color: rgb(20, 220, 210);
+            cursor: pointer;
+        }
+        
+        .no {
+            text-align: center;
+        }
+        p:hover {
+            cursor: pointer;
+            color: rgb(136, 255, 0);
+            font-style: italic;
+            font-family: fantasy;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Employee Record</caption>
+        <thead>
+            <tr class="de">
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Emp-username</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Salary</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="no">1</td>
+                <td>Vijay</td>
+                <td>Vijay11</td>
+                <td class="email"><a href="mailto:Vijay@gmail.com">Vijay@gmail.com</a></td>
+                <td>9898989898</td>
+                <td>25,000</td>
+            </tr>
+            <tr>
+                <td class="no">2</td>
+                <td>Sathish</td>
+                <td>Sathis12</td>
+                <td class="email"><a href="mailto:Sathish@gmail.com">Sathish@gmail.com</a></td>
+                <td>89898989</td>
+                <td >30,000</td>
+            </tr>
+            <tr>
+                <td class="no">3</td>
+                <td>Reshma</td>
+                <td>Reshma13</td>
+                <td class="email"><a href="mailto:Reshma@gmail.com">Reshma@gmail.com</a></td>
+                <td>7878787878</td>
+                <td>40,000</td>
+            </tr>
+            <tr>
+                <td class="no">4</td>
+                <td>Prakash</td>
+                <td>Prakash14</td>
+                <td class="email"><a href="mailto:Prakash@gmail.com">Prakash@gmail.com</a></td>
+                <td>656566646</td>
+                <td rowspan="2">35,000</td>
+            </tr>
+            <tr>
+                <td class="no">5</td>
+                <td>Priya</td>
+                <td>Priya15</td>
+                <td class="email"><a href="mailto:Priya@gmail.com">Priya@gmail.com</a></td>
+                <td>656445765</td>
+                <!-- <td>35,000</td> -->
+            </tr>
+        </tbody>
+    </table>   
+</body>
+
+</html>

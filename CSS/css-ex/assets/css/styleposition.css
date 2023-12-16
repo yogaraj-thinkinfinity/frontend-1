@@ -1,0 +1,40 @@
+body{
+      background-color: gray;
+}
+.div_1{
+      height: 100px;
+      width: 100px;
+      border: 2px solid black;
+      margin: 4px;
+      background-color: lavender;
+}
+.div_2{
+      height: 100px;
+      width: 100px;
+      border: 2px solid black;
+      margin: 4px;
+      background-color: lavender;
+      position: relative;
+}
+.smalldiv_1{
+      height: 50px;
+      width: 50px;
+      border: 1.5px solid black;
+      margin-top: 6PX;
+      margin-left: 21px;
+      background-color: gray;
+      position: absolute;
+      
+}
+.position_fixed{
+position: fixed;
+left: 30px;
+}
+.postion_absolute{
+      position: absolute;
+      left: 30px;
+}
+.position_relative{
+      position: relative;
+      left: 30px;   
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            * {
+                  padding: 0%;
+                  margin: 0%;
+            }
+
+            .title {
+                  text-align: center;
+            }
+
+            .text {
+                  text-align: center;
+                  margin: 20px auto;
+                  max-width: 300px;
+                  background-color: white;
+                  padding: 50px;
+                  border-radius: 40px;
+                  box-shadow: 0px 0px 5px 1px black;
+            }
+
+            h2 {
+                  font-family: cooper;
+                  text-align: center;
+                  font-weight: bold;
+                  border-radius: 10px;
+                  padding: 4px;
+                  background-color: yellow;
+                  width: 100px;
+                  margin-left: 605px
+            }
+
+            .text label {
+                  text-align: left !important;
+                  /* font-family: cooper; */
+                  font-weight: bold;
+                  margin-top: 10px;
+            }
+
+            .btn {
+                  background-color: green;
+                  color: white;
+                  width: 50%;
+                  border-radius: 10px;
+            }
+      </style>
+</head>
+
+<body>
+
+      <h2>Register</h2>
+      <div class="text">
+            <label class="">Name :
+                  <input type="text" placeholder="Enter your name...">
+            </label><br><br>
+            <label class="">PhoneNo :
+                  <input type="number" placeholder="Enter mobile number" id="number">
+            </label><br><br>
+            <button onclick="register()" class="btn">Submit</button>
+
+      </div>
+      <script>
+            function register() {
+                  let input_name = document.getElementsByTagName('input')[0].value;
+                  let first_letter = input_name.slice(0, 1).toUpperCase();
+                  let remaining_letters = input_name.slice(1);
+                  let correct_name = first_letter.concat(remaining_letters);
+                  let phone_number = document.getElementById('number').value;
+                  let correct_number = phone_number.slice(4).padStart(10, '*')
+                  let text = 'Hi ' + correct_name + '!. Your name has been registered successfully.' + ' with your phone number ' + correct_number;
+                  // alert(text)
+                  let h1 = document.createElement('h1');
+                  h1.innerText = text
+                  h1.setAttribute('class', 'title')
+                  console.log(h1, 'h1111111111111');
+                  document.body.append(h1)
+            }
+      </script>
+</body>
+
+</html>

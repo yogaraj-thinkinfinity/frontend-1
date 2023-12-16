@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <script>
+        // /internal javascript/ 
+        alert("welcome to javascript")
+    </script>
+</head>
+
+<body>
+
+    <form name="surveyFrm" method="get" action="survey-form.php" autocomplete="off" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Survey Form :</legend>
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="uname" placeholder="Enter your name" maxlength="10" required />
+            <br /><br />
+
+            <label for="password">Your Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" maxlength="5"
+                required />
+            <br /><br />
+
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" />
+            <br /><br />
+
+
+            <label for="gender">Your Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other
+            <br /><br />
+
+            <label for="useremail">Your email:</label>
+            <input type="email" id="useremail" name="useremail" placeholder="Enter your email" required />
+            <br /><br />
+
+            <label for="phone">Your Telephone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br /><br />
+
+            <label for="current_week">Select Current Week: </label>
+            <input type="week" id="current_week" name="current_week" />
+            <br /><br />
+
+            <label for="current_month">Select Current Month: </label>
+            <input type="month" id="current_month" name="current_month" />
+            <br /><br />
+
+            <label for="favColor">Favourite Color:</label>
+            <input type="color" id="favColor" name="favColor" />
+            <br /><br />
+
+            <label for="bday">Your Birthday:</label>
+            <input type="datetime-local" id="bday" name="bday" />
+            <br /><br />
+
+            <label for="companyJoinDate">Your First Company Interview Date:</label>
+            <input type="date" id="companyJoinDate" name="companyJoinDate" min="2023-09-01" max="2023-09-22" />
+            <br /><br />
+
+            <label for="appointment_time">Your First Company Interview Appointment Time:</label>
+            <input type="time" name="appointment_time" id="appointment_time" value="11:15">
+            <br /><br />
+
+            <label for="website_url">You website name Please ? :</label>
+            <input type="url" name="website_url" id="website_url">
+            <br /><br />
+
+            <label for="profile_img">Profile Image :</label>
+            <input type="image" src="food1.jpg" alt="profile image" width="150" height="150"
+                id="profile_img" name="profile_img">
+            <br /><br />
+
+            <label for="salary">Your Salary :</label>
+            <input type="range" name="salary" id="salary" min="5000" max="10000" step="1000">
+            <br /><br />
+
+            <label for="details">Details:</label>
+            <textarea name="details" rows="5" cols="20" maxlength="100" placeholder="Enter yourself in details"
+                required></textarea>
+            <br /><br />
+
+            <label for="survey_id">Your Survey Id :</label>
+            <input type="hidden" name="survey_id" id="survey_id" value="surv_589">
+            <br /><br />
+
+            <label for="yourresume">Upload Your resume:</label>
+            <input type="file" id="yourresume" name="yourresume" accept="image/*,.pdf" />
+            <br /><br />
+
+            <label for="favCar">Your Fav Programming Language:</label>
+            <select id="favLang" name="favLang">
+                <option value="php">PHP</option>
+                <option value="java">Java</option>
+                <option value="mysql">Mysql</option>
+                <option value="angular">Angular</option>
+                <option value="bs">BS5</option>
+                <option value="css">CSS</option>
+                <option value="react">React</option>
+            </select>
+            <br /><br />
+            <h3>Your Hobbies</h3>
+            <label for="interest1">
+                <input type="checkbox" id="interest1" name="interests[]" value="sports"> Sports
+            </label><br>
+
+            <label for="interest2">
+                <input type="checkbox" id="interest2" name="interests[]" value="music"> Music
+            </label><br>
+
+            <label for="interest3">
+                <input type="checkbox" id="interest3" name="interests[]" value="movies"> Movies
+            </label><br>
+
+            <label for="interest4">
+                <input type="checkbox" id="interest4" name="interests[]" value="reading"> Reading
+            </label><br>
+
+            <label for="interest5">
+                <input type="checkbox" id="interest5" name="interests[]" value="travel"> Travel
+            </label><br>
+
+
+            <input type="submit" value="Send" style="background-color: aqua;" />
+            <input type="reset" value="Reset" style="background-color: aqua;" />
+            <button type="button" onclick="javascript:alert('You have subscribed weekly Newsletter !')"
+                style="background-color: gold;">Subscribe Newsletter</button>
+        </fieldset>
+    </form>
+
+    <h1>Output for <optgroup</h1>
+            <label for="cars">Choose a Language:</label>
+            <select name="development" id="development">
+                <optgroup label="Frontend Languages">
+                    <option value="html">HTML</option>
+                    <option value="js">Javascript</option>
+                </optgroup>
+                <optgroup label="Backend Languages">
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                </optgroup>
+            </select>
+
+</body>
+
+</html>

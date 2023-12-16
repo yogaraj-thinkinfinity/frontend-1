@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTMl5 Tags</title>
+    <meta charset="UTF-8" />
+    <style>
+      h1 {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>figure caption</h1>
+    <!-- multiple figure caption use pannalam -->
+    <figure>            
+      <img src="assets/first.jpg" alt="Trulli" style="width: 300px;height:300px;">
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+    <h1>Picture tag</h1>
+    <picture>
+      <source media="(min-width:768px)" srcset="assets/apple.jpeg">
+      <source media="(min-width:600px)" srcset="assets/instagram.jpeg">
+      <source media="(min-width:450px)" srcset="assets/twitter.png">
+      <img src="assets/ford.png" alt="Ford" style="width:auto;">
+    </picture>
+
+    <h1 for="file">Downloading progress:</h1>
+    <progress id="file" value="32" max="100"> 32% </progress> 32%
+
+
+    <h1>Meter Tag</h1>
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="2" min="0" max="10">2Gb out of 10Gb</meter><label>2Gb out of 10Gb</label><br>
+    
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.6">60%</meter>
+
+
+    <h1>Details and summary tag</h1>
+    <details>
+      <summary>Facebook</summary>
+      <p> The Facebook app Page celebrates how our friends inspire us, support us, and help us discover the world when we connect. 
+        Community Values. We believe people can do more</p>
+    </details>
+
+    <h1>Dialog Tag</h1>
+    <dialog open style="border: 5px solid greenyellow;">This is an open dialog window</dialog>
+
+    <br><br><br>
+    <h1>BDO</h1> 
+    <span>Original Text: This paragraph will go right-to-left.</span><br /><br />
+    <span>Reversed Text:</span><bdo dir="rtl"> This paragraph will go right-to-left.</bdo>
+
+    <h1>KBD Tag</h1>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+    <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+
+    <h1>Blockquote Tag</h1>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+      </blockquote>
+
+      <h1>q Tag</h1>
+      <q>Build a future where people live in harmony with nature.</q> We hope they succeed.</p>
+
+      <h1>address Tag</h1>
+      <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+        </address>
+
+        <h1>Code tag</h1>
+        <pre>
+          <code>
+            function sum() {
+              alert(10+20);
+            }
+          </code>
+        </pre>
+
+        <h1>abbr tag</h1>
+        <p>The <abbr title="Hyper Text Markup Language">HTML</abbr> is the publishing language of the World Wide Web.</p>
+  
+        <h1>VIDEO tag</h1>
+        <video id="vTest" class="" controls>
+          <source src='assets/samplevideo.ogg' type='video/ogg'>
+          <track label="English subtitles" kind="subtitles" srclang="en" src="assets/sampletrack.vtt" default>
+        </video>
+         <br><br>
+         <h1>Audio Tag</h1>
+        <audio>
+                <source src="assets/Anime - Message Alert.mp3">
+          </audio>
+      </body>
+</html>

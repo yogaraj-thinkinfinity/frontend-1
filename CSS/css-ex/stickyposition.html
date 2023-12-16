@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <title>Sticky Position</title>
+</head>
+<style>
+      * {
+            margin: 0px;
+            padding: 0px;
+      }
+
+      .nav {
+            width: 100%;
+            background-color: darkorange;
+            text-align: right;
+      }
+
+      .sticky {
+            display: flex;
+            padding: 20px;
+            list-style-type: none;
+            justify-content: space-between;
+            line-height: normal;
+
+      }
+
+      .sticky li {
+
+            display: inline;
+            padding: 10px;
+            line-height: px;
+      }
+
+      .sticky li:hover {
+            border-radius: 10px;
+            background-color: red;
+            cursor: pointer;
+
+      }
+</style>
+
+<body>
+      <h1>Web Development</h1>
+      <nav class="nav">
+            <ul class="sticky">
+                  <li>Html</li>
+                  <li>Css</li>
+                  <li>Java Script</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Php</li>
+            </ul>
+      </nav>
+</body>
+
+</html>

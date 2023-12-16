@@ -1,0 +1,36 @@
+1. Find the number of vowels in a string. Example="Hello World" Output=3 
+
+2. FizzBuzz Challenge (create a for loop that iterates up to 100 while 
+   outputting “fizz” at multiples of 3,“buzz” at 
+   multiples of 5 and “fizzbuzz” at multiples of 3 and 5.)
+   
+3. Given a string, reverse each word and letter in the sentence. 
+   Example="Hello World" Output="olleH dlroW"
+   
+4. check if two provided strings are anagrams of each other; 
+   letter casing shouldn’t matter. Example="finder" is an anagram of "Friend",
+   "hello" is an anagram of "lohel" but not an anagram of "llohel" Output=true
+   
+5. Fibonacci (A Fibonacci sequence is an ordering of numbers 
+   where each number is the sum of the preceding two)
+   
+6. Factorial of a number (A factorial of a whole number is that number 
+   multiplied by every whole number between itself and 1.Example: 5!= 5*4*3*2*1=120)
+   
+7. Print Prime Numbers of 20
+
+8. Compare two objects to determine if the first one contains 
+equivalent property values to the second one. 
+Example=Object1={name: "ISRO", age: 35, role: "Scientist"} 
+Object2={name: "ISRO", age: 35, role: "Scientist"} Output=true   O
+bject1={name: "ISRO", age: 35, role: "Scientist"} 
+Object2={name: "ISRO", age: 35, role: "Scientist", country: "India"} Output=false
+
+9. Get the count of repeated elements in an array. 
+Example=[1,2,3,2,3,4,1,2,4,5,6,7,5,6,7,8,9,5,6,7,8,9,10,
+11,12,13,14,15,16,17,18,19,20] 
+Output=1:2, 2:3, 3:2, 4:2, 5:3, 6:3, 7:3, 8:2, 9:2, 10:1, 
+11:1, 12:1, 13:1, 14:1, 15:1, 16:1, 17:1, 18:1, 19:1, 20:1
+
+10. Get 10 digits from user as input and convert first 6 digits 
+to *(asterisk). Example=Input=1234567890 Output=******7890

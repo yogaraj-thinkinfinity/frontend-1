@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Output</title>
+    </head>
+    <body>
+        <h1>Output</h1>
+        <ul>
+            <li>The output element in HTML is used to represent the result of a calculation or the outcome of a user action. </li>
+            <li>It is often used in conjunction with JavaScript to display dynamically generated content or the result of calculations within a web page. </li>
+            <li>The output element can be updated and modified through JavaScript to display different values based on user input or program logic.</li>
+        </ul>
+        <h2>Example :</h2>
+
+        <p>Enter two numbers:</p>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button onclick="calculateSum()"> Calculate Sum </button>
+        <p>Sum: <output id="result">0</output></p>
+      
+        <script>
+          function calculateSum() {
+            // Get the values of the input fields
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+      
+            // Calculate the sum
+            var sum = num1 + num2;
+      
+            // Display the sum in the <output> element
+            document.getElementById("result").textContent = sum;
+          }
+        </script>
+
+        
+        <h2>Explanation :</h2>
+        <ol>
+            <li>Two input elements of type number allow the user to enter numeric values.</li>
+            <li>A button element with an onclick attribute is used to trigger the calculateSum() JavaScript function when clicked.</li>
+            <li>The output element with the id "result" is initially set to display "0" as its default value.</li>
+            <li>The script section contains a JavaScript function calculateSum() that calculates the sum of the two input values and updates the content of the output element with the result.</li>
+            <li>When you enter two numbers in the input fields and click the "Calculate Sum" button, the JavaScript function will be executed. It retrieves the input values, performs the addition, and then displays the result in the output element.</li>
+            <li>
+                This example demonstrates how the output element can be used to display dynamic content or calculation results within an HTML document.
+            </li>
+        </ol>
+    </body>

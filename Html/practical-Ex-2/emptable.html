@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>TABLE-DEMO</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* border-spacing: 10px; */
+            /* background-color: aqua; */
+        }
+        th,td {
+            border:1px solid grey;
+            padding: 5px;
+            text-align: left;
+        }
+        /* Style the caption */
+        caption {
+            color: blueviolet;
+            font-weight: bold;
+        }
+        /* Style the header row */
+        thead tr.bg {
+            background-color: lightgray;
+        }
+        /* Style alternate rows in the tbody odd or even as a parameter */
+        tbody tr:nth-child(even) {
+            background-color: #d7bebe;
+            color: #000;
+        }
+        /* Style the hover effect for rows */
+        tbody tr:hover {
+            background-color: crimson;
+            cursor: pointer;
+        }
+         /* Apply sno as center */
+        .sno {
+            text-align: center;
+        }
+        /* Apply HOVER Syle for Paragraph ELEMENT */
+        p:hover {
+            cursor: pointer;
+            color: blue;
+            font-style: italic;
+            font-family: fantasy;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Students Record</caption>
+        <thead>
+            <tr class="bg">
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>sa</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="sno">1</td>
+                <td>Arun</td>
+                <td>arun27</td>
+                <td class="email"><a href="mailto:arun@gmail.com">arun@gmail.com</a></td>
+                <td>9898989898</td>
+                <td>HTML, CSS, JS</td>
+            </tr>
+            <tr>
+                <td class="sno">2</td>
+                <td colspan="2">sam26</td>
+                <td class="email">sam@gmail.com</td>
+                <td>89898989</td>
+                <td rowspan="2">HTML, Angular, CSS</td>
+            </tr>
+            <tr>
+                <td class="sno">3</td>
+                <td>Sarah</td>
+                <td>sarah23</td>
+                <td class="email">sarah@gmail.com</td>
+                <td>7878787878</td>
+            </tr>
+            <tr>
+                <td class="sno">4</td>
+                <td>Ajay</td>
+                <td>ajay21</td>
+                <td class="email">ajay@gmail.com</td>
+                <td>656566646</td>
+                <td>HTML, REACT JS, Bootstrap</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>THIS IS PARAGRAPH</p>
+</body>
+
+</html>

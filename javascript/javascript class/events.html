@@ -1,0 +1,64 @@
+]paO<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    div {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <label>Enter your name: </label>
+    <input onchange="changeInput()" onkeydown="keyDownInput()" onkeypress="keyPressInput()" 
+                 onkeyup="keyUpInput()" type="text" id="name_input"><br>
+    <button onclick="register_user()">Register</button>
+    <button id="register">register 2</button>
+    <button onclick="disableReigster()">Disable register button</button>
+    <div onmouseenter="mouseEnterDiv()" onmouseleave="mouseLeftDiv()" 
+    onmousehover="mouseHoveredDiv()"></div>
+    <script>
+        function register_user() {
+            var username = document.getElementById('name_input').value;
+            alert('Hi ' + username + '. Your account has been registered successfully!')
+        }
+        
+        function disableReigster() {
+            document.getElementById('register').removeEventListener('click',register_user);
+        }
+        document.getElementById('register').addEventListener('click',register_user);
+        
+        function mouseEnterDiv() {
+            console.log("mouse entered");
+            document.getElementsByTagName('div')[0].style.backgroundColor = "red"
+        }
+
+        function mouseLeftDiv() {
+            console.log("mouse left");
+            document.getElementsByTagName('div')[0].style.backgroundColor = ""
+        }
+
+        function mouseHoveredDiv() {
+            console.log("mouse Hovered");
+        }
+    
+        function changeInput() {
+            console.log("You have changed the value in input tag");
+        }
+        function keyDownInput() {
+            console.log("Key down");
+        }
+        function keyPressInput(){
+            console.log("Key Press");
+        }
+        function keyUpInput() {
+            console.log("key up");
+        }
+    </script>
+</body>
+</html>

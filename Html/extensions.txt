@@ -1,0 +1,11 @@
+multiple tag use commends:-
+
+table>tr*2>td*5>
+
+console log:-
+
+cntrl+alt+
+
+codesnap( code scren short)
+
+cntrl+shift+p

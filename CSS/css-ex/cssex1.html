@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>CSS-EX</title>
+</head>
+<style>
+      #div_1 span {
+            color: blue;
+      }
+      #div_2 > div {
+            color: orange;
+      }
+      #div_3 + p {
+            color: aqua;
+      }
+      #div_4 ~ p {
+            color: rgb(7, 194, 7);
+      }
+      p::first-letter{
+            font-size: 26px;
+            font-weight: bold;
+      }
+      /* p::first-line {
+            color: brown;
+      } */
+      ul > li:first-child {
+            color: rgb(5, 67, 236);
+      }
+      
+      ul > li:last-child {
+            color: rgb(208, 5, 235);
+      }
+      a:hover {
+            color: red !important;
+      }
+      a:link {
+            color: yellowgreen;
+      }
+      a:visited {
+            color: blueviolet;
+      }
+</style>
+<body>
+      <h2>Descendant Selector</h2>
+      <div id="div_1">
+            <span>I am not inside a div</span>
+            <div>
+                  <span>I am inside a div</span>
+            </div>
+      </div>
+      <h2>Child Selector </h2>
+      <div id="div_2">
+            <span>I am not inside a div</span>
+            <span>I am span2 outside a div</span>
+            <div>
+                  <span>I am inside a div</span>
+            </div>
+      </div>
+      <h2>Adjacent Sibling Selector</h2>
+      <div id="div_3">
+            Div 3
+      </div>
+      <p>I am para 1</p>
+      <p> I am para 2</p>
+      <p> I am para 3</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eos quisquam debitis quibusdam atque aperiam cupiditate blanditiis perferendis quam odio doloribus. 
+            Quae perferendis atque similique praesentium, porro magnam voluptates doloremque minus.</p>
+      <h2>Link</h2>
+      <a href="https://www.google.com/photos">I am an anchor tag</a>
+
+      <h2> General Sibling Selector</h2>
+      <div id="div_4">
+             Div 4
+      </div>
+      <a>Anchor 1</a>
+      <p>I am para 1</p>
+      <p>I am para 2</p>
+      <a> I am an anchor tag</a>
+      <p> I am para 3</p>
+
+      <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS(es6)</li>
+      </ul>
+      </body>
+</html>

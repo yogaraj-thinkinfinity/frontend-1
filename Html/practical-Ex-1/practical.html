@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="assests/Images/Food123.png" />
+</head>
+<style> 
+    /* whole body of html tags */
+    * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    /* box heading color and width */
+    .header {
+        background-color: lavender;
+        width: 100%;
+    }
+
+    /* header images size */
+    .header img {
+        width: 90px;
+        cursor: pointer;
+    }
+
+    /* Its to route to another page */
+    a {
+        display: block;
+        width: 180px;
+        color: black;
+        padding: 30px;
+        font-size: 20pt;
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+    /* Its to highight the dropdowns and nav */
+    a:hover,
+    .dropdown li {
+        background-color: azure !important;
+    }
+
+    /* to align the navbars to be in aligned */
+    .home {
+        display: flex;
+        float: right;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    /* to remove the underline of the menu list */
+    .Menu {
+        list-style-type: none;
+    }
+
+    /* backgorund image to be fit correclty */
+    .image {
+        /* background-image: url('.assests/Images/food1.jpg'); */
+        background-image: url("assests/Images/food1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 520px;
+    }
+
+    /* alignments of dropdown */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: lavender;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: lavender;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* title alignment */
+    .head {
+        padding-top: 22px;
+        padding-right: 290px;
+        font-size: 27px;
+        font-family: Cooper Black;
+        justify-content: space-between;
+        list-style-type: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <img src="assests/Images/Food123.png" alt="Food">
+        <ul class="home">
+            <li class="head">Anitha Restaurant</li>
+            <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa fa-users"></i> About</a></li>
+            <li><a href="contact.html"><i class="fa fa-phone-square"></i> Contact</a></li>
+            <li class="dropdown"><a href=""><i class="fa fa-bars"></i> Menu</a>
+                <div class="dropdown-content">
+                    <a href="veg.html">Vegetarian</a>
+                    <a href="non-veg.html">Meat</a>
+                    <a href="seafood.html">Seafood</a>
+                    <a href="dessert.html">Desserts</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="image">
+    </div>
+</body>
+
+</html>

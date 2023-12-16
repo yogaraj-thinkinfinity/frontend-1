@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link -> button { color: blue } -->
+</head>
+<style>
+
+</style>
+<body>
+    <button style="color: red;" onclick="submitData1()">Submit</button>
+    <script>
+
+        const submitData= () => {
+            // synchronous
+            setTimeout(5000);
+            alert('Hello! You have clicked the button')
+        }
+
+        function submitData1() {
+            // callback - passing a function as a paramater to another function. In this case function 1 will be executed and
+            //                    then function2 will be called( by function1)
+            setTimeout(()=>{
+                // alert('Hello! You have clicked the button')
+            },5000);
+            setTimeout(showAlert,5000)
+        }
+        function showAlert() {
+            alert('Hello! You have clicked the  red-button')
+        }
+    </script>
+</body>
+</html>

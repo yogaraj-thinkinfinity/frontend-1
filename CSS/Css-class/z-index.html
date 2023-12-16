@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<style>
+      /* z-index - used to define overlapping of elements */
+      .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            position: fixed;
+      }
+      .box_1 {
+            background-color: aquamarine;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            opacity: 0.8;     /* defines the transparency of an element. The value ranges between 0 and 1. ie., 0,0.1,0.2,0.3.......,0.9,1*/
+      }
+      .box_2 {
+            background-color: bisque;
+            top: 80px;
+            left: 80px;
+            z-index: 3;
+            overflow: hidden; /* hides the overflowing content. scroll - makes it a scrollable element. overflow-x, overflow-y -> makes it scrollable element based on the value*/
+      }
+      .box_3 {
+            background-color: cadetblue;
+            top: 110px;
+            left: 110px;
+            z-index: 2;
+      }
+      span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+      }
+</style>
+<body>
+      <div class="box box_1">1</div>
+      <div class="box box_2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+      <div class="box box_3"><span>3</span></div>
+</body>
+</html>

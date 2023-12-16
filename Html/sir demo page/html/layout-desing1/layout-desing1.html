@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Design-1</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family:'Times New Roman', Times, serif;
+    }
+    /* Header Styles */
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 0;
+      overflow: hidden;
+    }
+
+    .logo {
+      float: left;
+      padding-left: 20px;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      vertical-align: middle; /* Vertically align the logo */
+    }
+
+    .logo span {
+      vertical-align: middle; /* Vertically align the text next to the logo */
+    }
+
+    .user-profile {
+      float: right;
+      padding-right: 20px;
+      text-align: right;
+    }
+
+    .user-profile img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      vertical-align: middle; /* Vertically align the profile image */
+    }
+
+    /* Navigation Styles */
+    nav {
+      background-color: #333;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .menu li {
+      float: left;
+    }
+
+    .menu li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .menu li a:hover {
+      background-color: #555;
+    }
+
+    /* Content Styles */
+    .content {
+      clear: both;
+      height: auto; /* Removed fixed height */
+      padding: 20px;
+      overflow: hidden; /* Add this to clear floats */
+    }
+
+    .info {
+      float: left;
+      width: 65%;
+    }
+
+    .advertisement {
+      float: right;
+      width: 30%;
+    }
+
+    .advertisement img {
+      width: 100%;
+      height: 50%;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      clear: both; /* Add this to clear floats */
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: justify;
+      line-height: 30px;
+    }
+    .tourImg {
+      margin-top: 10px;width: 50%; height: 50%;
+    }
+    ul .active {
+      background-color: peru;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+      <span>Your Company Name </span>
+    </div>
+    <div class="user-profile">
+      <img src="images/profile.jpeg" alt="Profile Image">
+      <span>Welcome, John</span>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Tour Package</a></li>
+      <li><a href="#">Top Destination</a></li>
+      <li><a href="#" class="active">Maharashtra</a></li>
+      <li><a href="#" >Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="info">
+      <h1>Maharashtra destinations for budget-conscious travellers</h1>
+      <p>Maharashtra, beyond the glitzy-glamorous Mumbai, is a pretty budget-friendly state. And luckily for us, a lot of these places are pretty to look at too. Some of them are in the hills and some, in the quiet coastal areas. When visiting these places on a budget, consider staying in budget-friendly accommodations like guesthouses, hostels, or government-run tourist lodges.</p>
+      <img src="images/tour1.png"  class="tourImg"/>
+      <p>
+        One can explore its many historical sites, parks, and vibrant street markets without spending much. Famous tourist attractions like the Shaniwar Wada, Aga Khan Palace, or the Pune Okayama Friendship Garden have minimal entry fees.
+      </p>
+      <img src="images/tour2.png"  class="tourImg"/>
+    </div>
+    <div class="advertisement">
+      <img src="images/advertisement.jpg" alt="Advertisement">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ma6wLpQSdL0?si=bxvYtdtNjP2ph3MS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Company Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

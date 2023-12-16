@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Script</title>
+</head>
+<body>
+        <label>Enter Your Name:</label>
+        <input type="text" id="username" placeholder="Name"><br><br>
+        <button onclick="user_submit()"> submit</button>
+        <button id="register">submit1</button>
+        <button onclick="register_disable()">Disable Submit</button>
+        <script>
+            function user_submit(){
+                  var username = document.getElementById('username').value;
+                  alert('Hi ' + username + ' You name has been register !')
+            }
+
+            function register_disable(){
+                  document.getElementById('register').removeEventListener('click',user_submit);
+            }
+            document.getElementById('register').addEventListener('click',user_submit);
+        </script>
+</body>
+</html>

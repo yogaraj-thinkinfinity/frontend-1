@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  storage - two types. 1. localStorage, 2. sessionStorage.
+        // localStorage - stores data in browser. The data will be deleted only if it is manually deleted
+
+        // real-time example - Swiggy app -  all the items added to the cart can be stored in broswer using localStorage
+        //  instead of storing it in database. This data will remain even after user visits the site after a long time. 
+        //  Or the data will stay unless and until user deletes.
+        
+        //  sessionStorage - stores data in broswer. But, the data gets deleted
+                                    //   when the user closes the tab or entire browser. 
+
+        // real-time example - Swiggy app -  when user browses and reaches the cart page, all the browsed items 
+        // can be shown as suggestions below the cart items. This data will be deleted once the browser is closed. 
+        // The next time users open the app, his browsing data differs. based on the browsed data, 
+        // suggestion can be shown again.
+
+        localStorage.setItem('name','priya')
+        localStorage.getItem('name')
+        localStorage.removeItem('name')
+        localStorage.clear()
+        // incase you are storing objects or arrays, do it differently.
+        let item = {
+            product: "biriyani",
+            quantity: 2,
+            price: 222
+        }
+        localStorage.setItem('items',JSON.stringify(item))  // if not converted to string, browser will store something like [object object]
+        let getItem = localStorage.getItem('items')   // this will return the object in strings. To use it, convert it into object.
+        JSON.parse(getItem) // converted back into object.
+
+        // same syntax for sessionStorage.
+
+        // task -  create a login page. Get inputs from user like, username, email, password. Create an object using these 
+        // information and save it in broswer. Later when you close the tab or entire browser, the data should be deleted.
+
+        // also keep a button. store the same data using localStorage. Once the button is clicked, the data in localStorage
+        //  should be deleted
+    </script>
+</body>
+</html>

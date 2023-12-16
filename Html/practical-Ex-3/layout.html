@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #F5F5F5;
+            height: 100px;
+            margin-bottom: 3px;
+            font-size: 35px;
+            font-family: cooper;
+            vertical-align: middle;
+        }
+
+        .logo {
+            width: 125px;
+            height: 100px;
+            vertical-align: middle;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 90px;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+            /* Vertically align the profile image */
+        }
+
+        .profile {
+            float: right;
+            padding-right: 20px;
+            text-align: right;
+        }
+
+        .nav {
+            width: 100%;
+            min-height: 50px;
+            line-height: 50px;
+            background-color: #F3BC84;
+            margin-bottom: 5px;
+            /* text-align: right; */
+            font-size: 20px;
+            text-align: right;
+        }
+
+        .menu li {
+            list-style-type: none;
+            display: inline;
+            padding: 15px;
+            line-height: 50px;
+        }
+
+        .menu li:hover {
+            cursor: pointer;
+            background-color: red;
+            color: #fff;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/naruto.png" alt="naruto" class="logo" />
+        <span>Naruto Anime</span>
+
+        <div class="profile">
+            <img src="images/jir.png" alt="naruto" />
+            <span style=" font-size: 22px; ">Welcome Vijay</span>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- THIS IS Content -->
+    </div>
+    <div class="footer">
+        <!-- THIS IS Footer -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Datalist</title>
+    </head>
+    <body>
+        <h1>Datalist</h1>
+        <ul>
+            <li>The datalist element in HTML provides a predefined list of options for an input element with a text-based type attribute (e.g., text, email, tel). </li>
+            <li>It allows users to select from a list of suggestions while typing into an input field, similar to a dropdown menu.</li>
+            <li>The datalist element is typically used in conjunction with the input element and the list attribute.</li>
+            <li>Here's the basic structure of the datalist element in HTML:</li>
+        </ul>
+        <h2>Example :</h2>
+
+        <label for="fruit">Choose a fruit:</label>
+        <input list="fruits" id="fruit" name="fruit" autocomplete="off">
+        <datalist id="fruits">
+                   <option value="Apple">
+                   <option value="Banana">
+                   <option value="Cherry">
+                   <option value="Grapes">
+                   <option value="Orange">
+        </datalist>
+
+        <h2>Explanation :</h2>
+        <ol>
+            <li>When a user starts typing in the input field, the browser displays a dropdown list with suggestions from the datalist.</li>
+            <li>As the user types, the suggestions dynamically update based on the input. Users can select a suggestion from the dropdown, and it will populate the input field</li>
+        </ol>
+    </body>

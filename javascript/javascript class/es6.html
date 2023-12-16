@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // es6 features
+        // 1. let, const.
+
+        // before es6
+        var age = 10;
+        let age1 = 10;
+        const age2 = 10;
+         //
+        //
+        //
+        //
+        //
+        var age = 30;
+        // let age1 = 30;
+        // const age2 = 20  // const is a block scope variable. It is very similar to let.
+
+        age1 = 100;
+        // age2 = 30;  // You cannot change the value of const
+
+        age1 = age2 + age1;
+        function abc() {
+            console.log(age);
+            var num1 = 10;  // var is a function-scope variable. A variable declared using var will be available inside the function. You cannot access it outside.
+            let num11 = 10;         // let is a block-scoped variable. block -  is a space from where a curly brace starts and ends. You cannot access the variable outside the block.
+            if( num1 < 20) {
+                var num2 = 20;
+                let num22 = 20;
+                if(num22 < 50 ) {
+                    let num33 = 30;
+                    var num3 = 300;
+                    console.log(num22);
+                }
+
+            }
+            // console.log(num2,'----',num22);
+            console.log(num3);
+        }
+        abc();
+
+        // console.log(num1,num11);
+
+        // 2. == vs ===
+
+        '10' == 10  //true - checks only if values are same
+        '10' === 10 // false - checks if both values and datatypes are same
+
+        // 3. arrow function
+
+        // before es6
+        async function aa(name) {
+            console.log("hello" + name);
+        }
+        
+
+        // after es6
+        const bb = async name => console.log("hello"+name);
+
+        // 4. template literals
+        let username = "SHibina";
+        let userage = 28;
+        let address = "Chennai";
+        let text = "hello " + username + ". I hope your age is "+ userage +". Are you residing in "+address+"?"
+        let txt = `hello ${username}. I hope your age is ${userage}. Arre you residing ${address}`
+
+        // 5. ternary operator
+        let hours = 2;
+        let amORpm = ''
+            if(hours > 12) {
+                amORpm = 'PM'
+            } else {
+                amORpm = 'AM'
+            }
+
+        let amORpm1 = hours > 12 ? "PM" : "AM"
+
+        // 6. spread operator
+
+        // before es6
+        let arr = [2,3,4];
+        let arr2 = arr; // shallow copy. Takes a light copy and maintains a link between them. That is why when arr2 is changed, arr is also changed.
+        arr2[1] =30;
+
+        // after es6
+
+        let arrr = [2,3,4];
+        let arrr2 = [...arrr]   // ... - spread operator. Copies elements from one array or object to another
+
+        let obj1 = {name: "ewf"};
+        let obj2 = { ...obj1}
+
+        // 7. destructuring
+
+        let student1 = {
+            name: "wed",
+            age:45,
+            address:"refgerg",
+            education: "wefre",
+            blood: "wef"
+        }
+        let student2 = {
+            name: "wed",
+            age:45,
+            address:"refgerg",
+            education: "wefre",
+            blood: "wef"
+        }
+
+        // before es6
+        student1.age
+        student1.address
+        student1.education
+
+        // after es6
+        let {blood, education} = student1
+
+        blood
+        education
+
+        // 8. async await
+        // before es6
+
+        // callback - callback hell problem. As a solution, async await was introduced
+
+        // 9. class
+
+        class Students {
+            constructor(name, age, address, edu, blood) {
+                this.age = age
+                this.name = name
+                this.education = edu
+                this.blood = blood
+                this.address = address
+            }
+        }
+
+        let stu1 = new Students("shi",34,"chenni","be","b+")
+        let stu2 = new Students("fgbtg",45,"rvfrt","br4fe","b+")
+        console.log(stu1,'stu1',stu2);
+
+    </script>
+</body>
+</html>

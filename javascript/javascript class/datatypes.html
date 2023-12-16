@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .title {
+        text-align: center;
+    }
+</style>
+<body>
+    <input type="text" placeholder="Enter your name...">
+    <input type="number" placeholder="Enter mobile number">
+    <button onclick="register()">Submit</button>
+    <script src="./assets/js/boolean.js"></script>
+    <script>
+        function register() {
+            let input_name = document.getElementsByTagName('input')[0].value;
+            let first_letter = input_name.slice(0,1).toUpperCase();
+            let remaining_letters = input_name.slice(1);
+            let correct_name = first_letter.concat(remaining_letters);
+            let text = 'Hi ' + correct_name + '!. Your name has been registered successfully.' 
+            // alert(text)
+            let h1 = document.createElement('h1');
+            h1.innerText = text
+            h1.setAttribute('class','title')
+            console.log(h1,'h1111111111111');
+            document.body.append(h1)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: lightgray;
+            height: 100px;
+            margin-bottom: 3px;
+        }
+
+        .logo {
+            width: 125px;
+            height: 100px;
+            vertical-align: middle;
+            /* float: right; */
+            float: ;
+        }
+
+        .hd span{ 
+            text-align: center; 
+             line-height: 5px; 
+         }
+
+        .nav {
+            min-height: 50px;
+            line-height: 50px;
+            background-color: #F3BC84;
+            text-align: left;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .menu li {
+            list-style-type: none;
+            display: inline;
+            padding: 15px;
+            line-height: 50px;
+        }
+
+        .menu li:hover {
+            cursor: pointer;
+            background-color: red;
+            color: #fff;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="food1.jpg" class="logo" />
+        <!-- <div class="hd"> -->
+            <span>Naruto Anime</span>
+        <!-- </div> -->
+    </div>
+
+    <div class="nav">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="content">
+        THIS IS Content
+    </div>
+    <div class="footer">
+        THIS IS Footer
+    </div>
+</body>
+
+</html>
